@@ -45,15 +45,16 @@ form {
   .input-group button {
     width: 25%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #e9302d;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: color 0.3s ease;
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #c12c2a;
   }
   
   .message {
@@ -73,11 +74,12 @@ form {
   .submit {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #e9302d;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
+    transition: color 0.3s ease;
   }
