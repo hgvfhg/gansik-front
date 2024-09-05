@@ -150,7 +150,7 @@
 
 .box-liner {
     border-bottom: 2px solid #f5f5f5 ;
-    width: 70%;
+    width: 85%;
     height: 130px;
 }
 
@@ -185,7 +185,7 @@
 
 
 
-/* 최신 상품 나열 */
+/* 최신 상품 나열 박스창 */
 .newContainer {
     display: flex;
     width: 100%;
@@ -227,6 +227,9 @@
     transform: translateX(-30px);
 }
 
+
+
+/* 신상품 정렬 */
 .product {
     display: flex;
     align-items: center;   
@@ -237,7 +240,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
     text-align: center;
 }
 
@@ -260,5 +264,43 @@
     text-align: center; 
     color: #181A1c;
     margin-top: 3px;
+    transform: translateY(-30px);
+}
+
+
+
+/* 더보기 */
+.morebtn-container {
+    width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.morebtn {
+    width: 944px !important;
+    height: 56px !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: normal;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.morebtn:hover {
+    background-color: #eeeeee;
+}
+
+.box-liner2 {
+    border-bottom: 2px solid #f5f5f5 ;
+    width: 85%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
