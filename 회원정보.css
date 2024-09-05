@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+  }
+  
+  body{
+    background-color: rgba(200, 200, 200, 0.4);
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  section{
+    width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .list{
+    width: 182px;
+    margin: 64px 0 0 20px;
+  }
+  .myeat{
+    height: 44px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: bottom 16px;
+    display: flex;
+    align-items: center;
+  }
+  .name{
+    padding-left: 5px;
+    height: 52px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .detail-list{
+    padding: 14px 16px 15px 0px;
+    font-size: 14px;
+    color: rgb(126, 128, 130);
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    
+  }
+  .detail-select{
+    padding: 14px 16px 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  .infomation{
+    text-decoration: underline;
+  }
+  .detail-noselect{
+    padding: 14px 16px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px -1px inset;
+    cursor: pointer;
+  }
+  .info{
+    width: 824px;
+    margin: 64px 10px 0 0;
+  }
+  .content-name{
+    color: rgb(24, 26, 28);
+    height: 44px;
+    letter-spacing: -0.4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+  }
+  
+  hr{
+    border-color: rgba(126, 128, 130, 0.3);
+    border-width: 1px;
+  }
+  .content{
+    height: 600px;
+    background-color: white;
+    margin: 20px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .form-title{
+    color: gray;
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 5px
+  }
+  .form-content{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px
+  }
+
+
+
+  button:hover {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    cursor: pointer;
+  }
+
+  .submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원정보</title>
+  <link rel="stylesheet" href="회원정보.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="section">
+    <div class="list">
+      <div class="introduce">
+        <div class="myeat">마이페이지</div>
+        <div class="name"><strong>홍길동</strong>님</div>
+      </div>
+      <div class="detail">
+        <div class="detail-list">정보관리</div>
+        <div class="detail-noselect"
+          onclick='location.href="http://127.0.0.1:5500/gansik/%EB%A7%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%A7%80.html"'>
+          <div class="order">주문/배송</div>
+          <div>&gt;</div>
+        </div>
+        <div class="detail-select"
+          onclick='location.href="http://127.0.0.1:5500/%ED%9A%8C%EC%9B%90%EC%A0%95%EB%B3%B4.html"'>
+          <div class="infomation">나의 정보</div>
+          <div>&gt;</div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="content-name">
+        나의 정보
+      </div>
+      <hr>
+      <div class="content">
+        <form onsubmit="return validateForm()">
+          <div>
+            <div class="form-title">이름</div>
+            <div class="form-content">홍길동</div>
+          </div>
+          <div>
+            <div class="form-title">이메일</div>
+            <div class="form-content">qwerty@naver.com</div>
+          </div>
+          <div>
+            <div class="form-title">전화번호</div>
+            <div class="form-content">010-1234-5678</div>
+          </div>
+          <div>
+            <div class="form-title">주소</div>
+            <div class="form-content">08590</div>
+            <div class="form-content">서울특별시 금천구 가산디지털1로 70 (가산동)</div>
+          </div>
+          <div>
+            <div class="form-content">지구어딘가</div>
+          </div>
+          <button class="submit"
+            onclick="location.href='http://127.0.0.1:5500/gansik/%ED%9A%8C%EC%9B%90%EC%88%98%EC%A0%95.html'">수정하기</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
