@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 등록</title>
+    <style>
+        .form-container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="file"] {
+            padding: 0;
+        }
+        .form-group img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>상품 등록</h1>
+    <div class="form-container">
+        <form id="create-item-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">상품명:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="price">가격:</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="stockQuantity">재고 수량:</label>
+                <input type="number" id="stockQuantity" name="stockQuantity" required>
+            </div>
+            <div class="form-group">
+                <label for="images">상품 이미지 (최대 5개):</label>
+                <input type="file" id="images" name="images" multiple>
+            </div>
+            <button type="submit">등록</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('create-item-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('http://localhost:8080/api/items', { // 상품 등록 API URL
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('상품이 등록되었습니다!');
+                window.location.href = 'view-items.html'; // view-items.html로 이동
+            })
+            .catch(error => {
+                console.error('상품 등록 중 오류 발생:', error);
+            });
+        });
+    </script>
+</body>
+</html>
