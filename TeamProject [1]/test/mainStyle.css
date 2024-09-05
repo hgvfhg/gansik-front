@@ -80,12 +80,11 @@
 .slider__btn {
     position: absolute;
     top: 48%;
-    width: 68%;
+    width: 95%;
     transform: translateY(-50%); 
     display: flex;
     justify-content: space-between;
 }
-
 
 .slider__btn a {
     position: relative;
@@ -250,7 +249,7 @@
 }
 
 .product-item img:hover {
-    transform: scale(1.04)
+    transform: scale(1.04) translateY(-40px);
 }
 
 .product span {
