@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 마우스 커서 이벤트 -->
+        <div class="cursor" style="z-index: 9999;">
+            <img src="logo2.png">
+        </div>
+        <script>
+            document.addEventListener('mousemove', (e) => {
+                let mouseX = e.pageX + 0; 
+                let mouseY = e.pageY + 0; 
+        
+                let cursor = document.querySelector('.cursor');
+                cursor.style.left = mouseX + 'px';
+                cursor.style.top = mouseY + 'px';
+            })
+        </script>
+</body>
+</html>
