@@ -6,7 +6,6 @@
   }
   
   
-  
   *{
     margin: 0;
   }
@@ -17,7 +16,6 @@
     align-items: center;
     box-sizing: border-box;
     justify-content: center;
-    /* 페이지 내용을 가운데 정렬 */
   }
   
   section {
@@ -30,8 +28,8 @@
     margin: 40px 80px;
   }
   
-  h1 {
-    margin: 40px 0;
+  .category {
+    margin: 35px 0 3px 0;
   }
   
   p {
@@ -45,48 +43,55 @@
     font-family: 'SpoqaHanSansNeo-Regular';
     font-weight: normal;
     color: #181A1c;
+    width: 406px;
+  }
+  
+  .name h1{
+    margin-bottom: 10px;
+  }
+  .date{
+    font-size: 13px;
+    color:#777;
+    margin-bottom: 10px;
   }
   
   .price {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom:20px;
   }
   
-  .name {
-    font-size: 20px;
-    font-weight: bold;
-  }
   
-  .size {
-    border: 1px solid rgba(200, 200, 200, 0.8);
-    font-family: 'SpoqaHanSansNeo-Regular';
-    font-weight: normal;
-    font-size: 14px;
+  .quantity span{
+    margin: 0 20px;
   }
-  
-  .size-row {
-    display: flex;
-    margin: 16px 20px;
-  }
-  
-  .size-name {
-    margin-left: 10px;
-    width: 70px;
-    color: #7E8082;
-  }
-  .size-detail{
-  margin-left: 40px;
+  .quantity button{
+  background-color: #fff;
+  border: 1px solid rgba(200, 200 ,200, 0.5);
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
   }
   
   .total {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
+    width: 406px;
+    margin-bottom: 13px;
+  }
+  .won{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
   }
   
   
-  
-  .buy-button button {
+  .buy-button .basket{
+    color: #e9302d; 
+    border: 1px solid #e9302d; 
+    background-color: white;
     font-size: 16px;
     font-weight: bold;
     height: 56px;
@@ -96,23 +101,24 @@
     cursor: pointer;
   }
   
-  .left-btn {
-    color: #e9302d; 
-    border: 1px solid #e9302d; 
-    background-color: white;
-  }
-  
-  .left-btn:hover {
+  .buy-button .basket:hover{
     background-color: #f8f2f2;
     filter: none !important;
   }
   
-  .right-btn {
+  .buy-button .buy{
     color: white; 
     background-color: #e9302d; 
     border: none;
+    font-size: 16px;
+    font-weight: bold;
+    height: 56px;
+    width: 148px;
+    margin-right: 4px;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
-  .right-btn:hover {
+  .buy-button .buy:hover{
     filter: brightness(150%);
   }
